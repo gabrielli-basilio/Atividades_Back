@@ -138,4 +138,17 @@
         }
 
         echo "\n";
+
+        // 10.Crie um array associativo contendo:
+
+        $pessoa = [
+            "Nome" => "Gabrielli",
+            "Idade" => 20,
+            "Cidade" => "Guarapuava",
+            "Tchola" => "Não"
+        ];
+
+        foreach ($pessoa as $chave => $valor) {
+            echo "$chave: $valor\n";
+        }
 ?>
