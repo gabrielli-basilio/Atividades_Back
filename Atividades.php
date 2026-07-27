@@ -128,6 +128,14 @@
         }
 
         echo "\n";
-
         
+        // 9. Crie um array de raças favoritas de papagaio.
+        $racasPapagaio = ["Papagaio-verdadeiro", "Papagaio-do-congo", "Papagaio-do-mangue"];
+        $racasPapagaio[] = "Papagaio-galego";
+
+        foreach($racasPapagaio as $raca){
+            echo "$raca\n";
+        }
+
+        echo "\n";
 ?>
