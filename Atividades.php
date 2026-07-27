@@ -101,4 +101,19 @@
     }
 
     exibirNome($nome);
+
+    // 7. Crie uma função que receba dois números e retorne a soma, a subtração e uma frase incrível
+
+    function calcular($a, $b) {
+        $soma = $a + $b;
+        $subtracao = $a - $b;
+        $frase = "Uau, isso é incrível!";
+
+        echo "Soma: $soma \n";
+        echo "Subtração: $subtracao \n";
+        echo "Frase: $frase \n";
+    }
+    
+    calcular(10, 5);
+
 ?>
