@@ -75,4 +75,19 @@
                 echo $i ."\n";
             }
         }
+
+        /* 5. Exiba a tabuada dos números:
+        4, 7 e 12.879,5 */
+
+        $numero1 = 4;
+        $numero2 = 7;
+        $numero3 = 12879.5;
+
+        foreach ([$numero1, $numero2, $numero3] as $numero) {
+            echo "---Tabuada do $numero---\n";
+            for ($i = 1; $i <= 10; $i++) {
+                echo "$numero x $i = " . ($numero * $i) . "\n";
+            }
+            echo "\n";
+        }
 ?>
