@@ -1,63 +1,78 @@
 <?php
 
-// IF e ELSE:
+    // IF e ELSE:
 
-    // 1. Crie uma variável $idade.
+        // 1. Crie uma variável $idade.
 
-    $idade = 12;
+        $idade = 12;
 
-    if ($idade >= 18) {
-        echo "Você é maior de idade. \n";
-    } else {
-        echo "Você é menor de idade. \n";
-    }
-    
+        if ($idade >= 18) {
+            echo "Você é maior de idade. \n";
+        } else {
+            echo "Você é menor de idade. \n";
+        }
+        
+        echo "\n";
 
-    // 2. Crie uma variável $dinheiro.
+        // 2. Crie uma variável $dinheiro.
 
-    $dinheiro = 2000;
+        $dinheiro = 2000;
 
-    if ($dinheiro <= 1000) {
-        echo "Pobre";
-    } else if ($dinheiro <= 5000) {
-        echo "Classe Média";
-    } else if ($dinheiro <= 50000) {
-        echo "Riquinho";
-    } else if ($dinheiro <= 1000000) {
-        echo "Ricão";
-    } else {
-        echo "Elon Musk";
-    }
+        if ($dinheiro <= 1000) {
+            echo "Pobre";
+        } else if ($dinheiro <= 5000) {
+            echo "Classe Média";
+        } else if ($dinheiro <= 50000) {
+            echo "Riquinho";
+        } else if ($dinheiro <= 1000000) {
+            echo "Ricão";
+        } else {
+            echo "Elon Musk";
+        }
 
-    // 3. Operação
+        echo "\n", "\n";
 
-    $numero1 = 15; 
-    $numero2 = 40;
-    $operacao = "*"; // Pode ser: +, -, *, /
+        // 3. Operação
 
-    switch ($operacao) {
-        case "+":
-            echo $numero1 + $numero2;
-            break;
+        $numero1 = 15; 
+        $numero2 = 40;
+        $operacao = "+"; // Pode ser: +, -, *, /
 
-        case "-":
-            echo $numero1 - $numero2;
-            break;
+        switch ($operacao) {
+            case "+":
+                echo $numero1 + $numero2;
+                break;
 
-        case "*":
-            echo $numero1 * $numero2;
-            break;
+            case "-":
+                echo $numero1 - $numero2;
+                break;
 
-        case "/":
+            case "*":
+                echo $numero1 * $numero2;
+                break;
 
-            if ($numero2 != 0) {
-                echo $numero1 / $numero2;
-            } else {
-                echo "Divisão por zero não é permitida.";
+            case "/":
+
+                if ($numero2 != 0) {
+                    echo $numero1 / $numero2;
+                } else {
+                    echo "Divisão por zero não é permitida.";
+                }
+                break;
+                
+            default:
+                echo "Operação inválida.";
+        }
+
+        echo "\n", "\n";
+
+    //LOOPS:
+
+        // 4. Mostre somente os números pares de 1 até 100
+
+        for ($i = 1; $i <= 100; $i++) {
+            if ($i % 2 == 0) {
+                echo $i ."\n";
             }
-            break;
-            
-        default:
-            echo "Operação inválida.";
-    }
+        }
 ?>
