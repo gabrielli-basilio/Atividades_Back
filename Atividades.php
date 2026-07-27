@@ -28,4 +28,36 @@
     } else {
         echo "Elon Musk";
     }
+
+    // 3. Operação
+
+    $numero1 = 15; 
+    $numero2 = 40;
+    $operacao = "*"; // Pode ser: +, -, *, /
+
+    switch ($operacao) {
+        case "+":
+            echo $numero1 + $numero2;
+            break;
+
+        case "-":
+            echo $numero1 - $numero2;
+            break;
+
+        case "*":
+            echo $numero1 * $numero2;
+            break;
+
+        case "/":
+
+            if ($numero2 != 0) {
+                echo $numero1 / $numero2;
+            } else {
+                echo "Divisão por zero não é permitida.";
+            }
+            break;
+            
+        default:
+            echo "Operação inválida.";
+    }
 ?>
