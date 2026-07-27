@@ -90,4 +90,15 @@
             }
             echo "\n";
         }
+
+    // FUNÇÕES
+
+    //6. Crie uma função que receba um nome
+
+    $nome = "Gabrielli";
+    function exibirNome($nome) {
+        echo "Olá, $nome!\n";
+    }
+
+    exibirNome($nome);
 ?>
