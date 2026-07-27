@@ -93,27 +93,41 @@
 
     // FUNÇÕES
 
-    //6. Crie uma função que receba um nome
+        //6. Crie uma função que receba um nome
 
-    $nome = "Gabrielli";
-    function exibirNome($nome) {
-        echo "Olá, $nome!\n";
-    }
+        $nome = "Gabrielli";
+        function exibirNome($nome) {
+            echo "Olá, $nome!\n";
+        }
 
-    exibirNome($nome);
+        exibirNome($nome);
 
-    // 7. Crie uma função que receba dois números e retorne a soma, a subtração e uma frase incrível
+        // 7. Crie uma função que receba dois números e retorne a soma, a subtração e uma frase incrível
 
-    function calcular($a, $b) {
-        $soma = $a + $b;
-        $subtracao = $a - $b;
-        $frase = "Uau, isso é incrível!";
+        function calcular($a, $b) {
+            $soma = $a + $b;
+            $subtracao = $a - $b;
+            $frase = "Uau, isso é incrível!";
 
-        echo "Soma: $soma \n";
-        echo "Subtração: $subtracao \n";
-        echo "Frase: $frase \n";
-    }
-    
-    calcular(10, 5);
+            echo "Soma: $soma \n";
+            echo "Subtração: $subtracao \n";
+            echo "Frase: $frase \n";
+        }
+        
+        calcular(10, 5);
+        
+        echo "\n";
 
+    // ARRAYS
+
+        // 8. Crie um array com cinco memes
+        $memes = ["Chill Guy", "Caneta Azul", "Rizz", "Gigachad", "Ohio"];
+
+        foreach($memes as $meme){
+            echo "$meme\n";
+        }
+
+        echo "\n";
+
+        
 ?>
